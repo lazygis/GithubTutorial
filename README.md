@@ -23,5 +23,14 @@ Github provides a easy operating interface for users. We are going to use **Git*
 
 ## Git Workflow
 If you want can change the target repository, your workflow will be like.
+
 ![workflow](image/git_workflow1.jpg)
 
+Here are some brief introductions:
+1. **clone**: you can clone a remote repository to the local. It will be used for initiation.
+2. **fetch**: get the new code to the local without merge. The edits will be shown in the code.
+3. **checkout**: If you have a branch, you can switch branches by checkout.
+4. **add**: put the code into the buffer zone before commit.
+5. **commit**: submit to the local repo. History will be stored in the local.
+6. **pull**: fetch and merge. the updated code will be in both local repo and workspace.
+7. **push**: update the code to the remote repo.

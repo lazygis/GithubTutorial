@@ -14,4 +14,14 @@ Ok, let's go back to the topic. Here are some definitions of the items about git
 
 **Pull request**: When you want to upload your code to the owner of the repository, you can pull request to the owner. When the request is accepted, the edits you make will be shown on the original repository.
 
+**Watch**: Get notifications when the repository is updated.
+
+**Issue**: When you find some bug, you can issue for the discussion.
+
+## Create a repository
+Github provides a easy operating interface for users. We are going to use **Git** or Pycharm to initiate a new repository.
+
+## Git Workflow
+If you want can change the target repository, your workflow will be like.
+![workflow](image/git_workflow1.jpg)
 

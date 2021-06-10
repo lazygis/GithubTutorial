@@ -22,7 +22,7 @@ Ok, let's go back to the topic. Here are some definitions of the items about git
 Github provides a easy operating interface for users. We are going to use **Git** or Pycharm to initiate a new repository.
 
 ## Git Workflow
-If you want can change the target repository, your workflow will be like.
+If you have the privilege to change the target repository, your workflow will be like.
 
 ![workflow](image/git_workflow1.jpg)
 

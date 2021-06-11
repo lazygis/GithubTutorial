@@ -34,3 +34,8 @@ Here are some brief introductions:
 5. **commit**: submit to the local repo. History will be stored in the local.
 6. **pull**: fetch and merge. the updated code will be in both local repo and workspace.
 7. **push**: update the code to the remote repo.
+
+When you want to get evolved in some repository of which you don't have the privilege, your workflow will be like.
+
+![workflow](image/git_workflow2.png)
+

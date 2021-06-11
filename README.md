@@ -40,3 +40,20 @@ When you want to get evolved in some repository of which you don't have the priv
 ![workflow](image/git_workflow2.png)
 
 The steps are similar to the previous one. However, you need to first fork the repository to your own account. After you finished changing, you need to pull request to make your code updated to the original one.
+
+## Download Git
+Before we start using Git, we need to download it in your computer. Also, you can download Git from your IDE. However, it would be great if you can download on your computer directly. The IDE can automatically track your Git and use it.
+
+You can download Git from the [link](https://git-scm.com/downloads). When you right click and find Git GUI and Git Bash, it indicates you install successfully.
+
+## Configure Git
+There are some methods to log in your account.
+1. Use IDE. When you first use Git in Pycharm, there will be a window to log-in. The software will remember your account and password.
+2. Use command lines. You can do this in Git Bash and any terminal.
+```angular2html
+git config --global user.name "your name"
+git config --global user.email "your email"
+## chekc your information
+git config --global user.name
+git config --global user.email
+```

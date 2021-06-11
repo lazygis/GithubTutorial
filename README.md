@@ -39,3 +39,4 @@ When you want to get evolved in some repository of which you don't have the priv
 
 ![workflow](image/git_workflow2.png)
 
+The steps are similar to the previous one. However, you need to first fork the repository to your own account. After you finished changing, you need to pull request to make your code updated to the original one.

@@ -53,7 +53,28 @@ There are some methods to log in your account.
 ```angular2html
 git config --global user.name "your name"
 git config --global user.email "your email"
-## chekc your information
+## check your information
 git config --global user.name
 git config --global user.email
 ```
+
+## Get local repository by command line
+1. Create an empty folder;
+2. Open Git Bash
+3. run "git init"
+
+## Local common commands
+At first, we need to know how to work with github locally. Every time we made edits in the working folder, we need to use "git add ." to add all files to the index. The dot '.' indicates all files in the working folder. Then, use git commit -m _'comment for the commit'_ to update the new edits to the repository.
+![lcoalcommand](image/repo_command.png)
+
+There are some additional command that are useful in daily usage.
+1. git status. It will show "changes to be commited" when you add the changes to the index. It will show "nothing to commit" if you commit all changes.
+2. git log. show the log of the local repository.
+- --all: show all branches
+- --pretty=oneline: show all information in one line
+- --abbrev-commit: use the abbreviations when showing the message
+- --graph: show the information by a graph.
+3. git reset --hard commitID: back to previous version. commitID can be checked by log.
+4. git reflog: find the log even though you cleared.
+
+.gitignore save the filename you don't want to add to the index or commit to the local repository.

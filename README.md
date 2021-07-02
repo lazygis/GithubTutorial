@@ -78,3 +78,33 @@ There are some additional command that are useful in daily usage.
 4. git reflog: find the log even though you cleared.
 
 .gitignore save the filename you don't want to add to the index or commit to the local repository.
+
+## Tips
+1. When you commit something to your local repo and you want to undo, you should use
+```angular2html
+## --soft: undo your commit
+git reset --soft HEAD^
+## --hard: undo your commit and add
+git reset --hard HEAD^
+## HEAD^ means HEAD~1, HEAD~i means back to i commits before 
+```
+2. update the forked repo
+```angular2html
+# Add the remote, call it "upstream":
+
+git remote add upstream https://github.com/whoever/whatever.git
+
+# Fetch all the branches of that remote into remote-tracking branches
+
+git fetch upstream
+
+# Make sure that you're on your master branch:
+
+git checkout master
+
+# Rewrite your master branch so that any commits of yours that
+# aren't already in upstream/master are replayed on top of that
+# other branch:
+
+git rebase upstream/master
+```

@@ -108,3 +108,14 @@ git checkout master
 
 git rebase upstream/master
 ```
+3. update the data to a new-created repo
+```angular2html
+### init git
+git init -b main
+
+### add all to the local 
+git add . && git commit -m "initial commit"
+
+### push the repo and set upstream
+git push --set-upstream origin main
+```

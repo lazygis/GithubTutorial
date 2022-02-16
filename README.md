@@ -63,6 +63,30 @@ git config --global user.email
 2. Open Git Bash
 3. run "git init"
 
+## Branch
+1. create a branch
+```angular2html
+git branch new-branch-name
+```
+2. change to the branch
+```angular2html
+git checkout branch-name
+```
+3. create and go to the new branch
+```angular2html
+git checkout -b new-branch
+```
+4. delete the branch
+```angular2html
+git branch -d new-branch
+```
+5. merge the branch: Both branches will point at the same commit.
+```angular2html
+
+```
+## The workflow of forking and pulling request
+
+
 ## Local common commands
 At first, we need to know how to work with github locally. Every time we made edits in the working folder, we need to use "git add ." to add all files to the index. The dot '.' indicates all files in the working folder. Then, use git commit -m _'comment for the commit'_ to update the new edits to the repository.
 ![lcoalcommand](image/repo_command.png)

@@ -82,7 +82,10 @@ git branch -d new-branch
 ```
 5. merge the branch: Both branches will point at the same commit.
 ```angular2html
-
+## commit all changes in your updated branch, then back to the main branch
+git checkout main
+## merge the branch
+git merge new-branch
 ```
 ## The workflow of forking and pulling request
 

@@ -89,7 +89,26 @@ git merge new-branch
 ```
 6. merge conflicts: when you merge the new branch back to the main branch, you may encounter merge conflicts.
 ```angular2html
+## you will get like below:
+
+<<<<<<< HEAD
 print("hello world?")
+=======
+str_1 = "hello world"
+print(str_1)
+>>>>>>> new-branch
+```
+You need to clean the codes you don't need and get like below:
+```angular2html
+print("hello world?")
+```
+Then add and commit the new changes to the Git:
+```angular2html
+git commit -a
+```
+7. abort the merge. after you try the merge and you find that's what you expect , you can use the command to abort the merge.
+```angular2html
+git merge --abort
 ```
 ## The workflow of forking and pulling request
 

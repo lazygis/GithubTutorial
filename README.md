@@ -160,10 +160,15 @@ git commit --amend
 ## after that please add description of why you revert the commit
 git revert commit-ID
 # or go back to the last commit
-git revert HEAD~1
+git revert HEAD^
 ```
 ### Pushed
+## Resetting vs. reverting
+It's important to understand that git revert undoes a single commit—it does not "revert" back to the previous state of a project by removing all subsequent commits. In Git, this is actually called a reset, not a revert.
 
+Reverting has two important advantages over resetting. First, **it doesn’t change the project history**, which makes it a “safe” operation for commits that have already been published to a shared repository.
+
+Second, **git revert is able to target an individual commit at an arbitrary point in the history**, whereas git reset can only work backward from the current commit.
 ## Tips
 1. When you commit something to your local repo and you want to undo, you should use
 ```angular2html

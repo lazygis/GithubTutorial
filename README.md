@@ -134,20 +134,34 @@ There are some additional command that are useful in daily usage.
 
 .gitignore save the filename you don't want to add to the index or commit to the local repository.
 
-## Solutions in different status
+## Regrets in different status
 ### Modified
 1. Don't want to stage the file.
 ```angular2html
 git checkout filename
 ```
-2. Want to stage and commit the changes.
-```angular2html
-git commit -a
-```
 ### Staged
-
+1. want to unstage the file you don't want to add
+```angular2html
+git reset HEAD filename
+```
+### Merged
+1. want to abort the merge from other branches
+```angular2html
+git merge --abort
+```
 ### Commited
-
+1. want to make subtle changes to the previous commit (before pusing to the remote)
+```angular2html
+git commit --amend
+```
+2. want to revert the commit (Given one or more existing commits, revert the changes that the related patches introduce, and record some new commits that record them. This requires your working tree to be clean (no modifications from the HEAD commit).)
+```angular2html
+## after that please add description of why you revert the commit
+git revert commit-ID
+# or go back to the last commit
+git revert HEAD~1
+```
 ### Pushed
 
 ## Tips

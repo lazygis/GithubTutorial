@@ -89,8 +89,6 @@ git merge new-branch
 ```
 6. merge conflicts: when you merge the new branch back to the main branch, you may encounter merge conflicts. You will get like below:
 ```angular2html
-
-
 <<<<<<< HEAD
 print("hello world?")
 =======
@@ -110,6 +108,12 @@ git commit -a
 ```angular2html
 git merge --abort
 ```
+## What is Git Head
+The term HEAD refers to **the current commit you are viewing**.
+
+By default, you’ll view the tip of the master branch on a repository, unless the main branch of your repository has a different name. The tip of the master branch is the most recent commit on the main branch of your codebase.
+
+
 ## The workflow of forking and pulling request
 
 

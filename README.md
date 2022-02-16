@@ -74,10 +74,27 @@ There are some additional command that are useful in daily usage.
 - --pretty=oneline: show all information in one line
 - --abbrev-commit: use the abbreviations when showing the message
 - --graph: show the information by a graph.
+- -p: produce the patch text.
 3. git reset --hard commitID: back to previous version. commitID can be checked by log.
 4. git reflog: find the log even though you cleared.
 
 .gitignore save the filename you don't want to add to the index or commit to the local repository.
+
+## Solutions in different status
+### Modified
+1. Don't want to stage the file.
+```angular2html
+git checkout filename
+```
+2. Want to stage and commit the changes.
+```angular2html
+git commit -a
+```
+### Staged
+
+### Commited
+
+### Pushed
 
 ## Tips
 1. When you commit something to your local repo and you want to undo, you should use

@@ -87,9 +87,9 @@ git checkout main
 ## merge the branch
 git merge new-branch
 ```
-6. merge conflicts: when you merge the new branch back to the main branch, you may encounter merge conflicts.
+6. merge conflicts: when you merge the new branch back to the main branch, you may encounter merge conflicts. You will get like below:
 ```angular2html
-## you will get like below:
+
 
 <<<<<<< HEAD
 print("hello world?")

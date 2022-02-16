@@ -87,6 +87,10 @@ git checkout main
 ## merge the branch
 git merge new-branch
 ```
+6. commit conflicts: when you merge the new branch back to the main branch, you may encounter merge conflicts.
+```angular2html
+print('helloworld')
+```
 ## The workflow of forking and pulling request
 
 

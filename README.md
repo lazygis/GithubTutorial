@@ -108,6 +108,19 @@ git commit -a
 ```angular2html
 git merge --abort
 ```
+
+## Fast-forward and three-way merge
+The main difference between two merge types is that fast-forward merge diverge but three-way merge doesn't.
+
+A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch.
+![fast-forward merge](image/fast_forward_merge_1.svg)
+<center>Credit <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Bitbucket</a></center>
+
+Three-way merges use a dedicated commit totie together the two histories. 
+A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch.
+![Three-way merge](image/three-way_merge.svg)
+<center>Credit <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Bitbucket</a></center>
+
 ## What is Git Head
 The term HEAD refers to **the current commit you are viewing**.
 

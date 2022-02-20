@@ -114,12 +114,12 @@ The main difference between two merge types is that fast-forward merge diverge b
 
 A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch.
 ![fast-forward merge](image/fast_forward_merge_1.svg)
-<center>Credit <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Bitbucket</a></center>
+<p style="text-align: center">Credit <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Bitbucket</a></p>
 
 Three-way merges use a dedicated commit totie together the two histories. 
 A fast-forward merge can occur when there is a linear path from the current branch tip to the target branch.
 ![Three-way merge](image/three-way_merge.svg)
-<center>Credit <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Bitbucket</a></center>
+<p style="text-align: center">Credit <a href="https://www.atlassian.com/git/tutorials/using-branches/git-merge">Bitbucket</a></p>
 
 ## What is Git Head
 The term HEAD refers to **the current commit you are viewing**.

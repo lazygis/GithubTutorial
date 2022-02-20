@@ -126,9 +126,31 @@ The term HEAD refers to **the current commit you are viewing**.
 
 By default, you’ll view the tip of the master branch on a repository, unless the main branch of your repository has a different name. The tip of the master branch is the most recent commit on the main branch of your codebase.
 
+## Remote basics
+Remote branches are references (pointers) to the state of branches in your remote repositories. They’re local branches that you can’t move; they’re moved automatically for you whenever you do any network communication. Remote branches act as bookmarks to remind you where the branches on your remote repositories were the last time you connected to them.
+
+![remote branches](image/remote-branches.png)
+
+Git’s clone command automatically names it origin for you, pulls down all its data, creates a pointer to where its master branch is, and names it origin/master locally.
+Check with remote.Git also gives you your own local master branch starting at the same place as origin’s master branch, so you have something to work from.
+```angular2html
+git remote -v
+```
+
+You will get two links:
+```angular2html
+origin  https://github.com/user/repo.git (fetch)
+origin  https://github.com/user/repo.git (push)
+```
+But in some cases, you can have the fetch URL use HTTP for read only access, and the push URL use HTTPS or SSH for access control.
+
+To get more information about the remote repo:
+```angular2html
+git remote show origin
+```
+It will show the Fetch and Push URL, HEAD branch, remote branch, local branch configured for "git pull" and "git push"
 
 ## The workflow of forking and pulling request
-
 
 ## Local common commands
 At first, we need to know how to work with github locally. Every time we made edits in the working folder, we need to use "git add ." to add all files to the index. The dot '.' indicates all files in the working folder. Then, use git commit -m _'comment for the commit'_ to update the new edits to the repository.
